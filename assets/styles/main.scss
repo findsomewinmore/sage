@@ -1,5 +1,6 @@
 @import "../../node_modules/bourbon/core/bourbon";
 @import "base/base";
+@import "common/grid";
 @import "../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
 @import "common/variables";
 
@@ -10,7 +11,6 @@
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/grid";
 @import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";

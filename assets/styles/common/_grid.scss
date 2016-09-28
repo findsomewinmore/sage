@@ -1,0 +1,61 @@
+// Enable Bourbon Neat Visual Grid
+$visual-grid: true !global;
+
+$max-width: 1000px !global;
+
+// Columns
+$mobile-portrait-columns: 4;
+$mobile-landscape-columns: 4;
+
+$tablet-portrait-columns: 8;
+$tablet-landscape-columns: 8;
+
+$desktop-columns: 12;
+
+// Portrait
+$iphone-portrait-width: em(320);
+$ipad-portrait-width: em(768);
+
+// Landscape
+$iphone-landscape-width: em(480);
+$ipad-landscape-width: em(1024);
+
+$desktop-width: em(1200);
+$large-desktop-width: em(1600);
+
+// Breakpoints
+$mobile-portrait: new-breakpoint(
+  min-width $iphone-portrait-width
+  orientation portrait
+  $mobile-portrait-columns);
+
+$tablet-portrait: new-breakpoint(
+  min-width $ipad-portrait-width
+  orientation portrait
+  $tablet-portrait-columns);
+
+$mobile-landscape: new-breakpoint(
+  min-width $iphone-landscape-width
+  orientation landscape
+  $mobile-landscape-columns);
+
+$tablet-landscape: new-breakpoint(
+  min-width $ipad-landscape-width
+  orientation landscape
+  $tablet-landscape-columns);
+
+$tablet-up: new-breakpoint(
+  min-width $ipad-portrait-width
+  $tablet-portrait-columns);
+
+$tablet-down: new-breakpoint(
+  max-width $ipad-landscape-width
+  $tablet-landscape-columns);
+
+$desktop: new-breakpoint(
+  min-width $desktop-width
+  $desktop-columns);
+
+$large-desktop: new-breakpoint(
+  min-width $large-desktop-width
+  $desktop-columns);

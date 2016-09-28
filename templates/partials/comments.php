@@ -27,7 +27,7 @@ if (post_password_required()) {
   <?php endif; // have_comments() ?>
 
   <?php if (!comments_open() && get_comments_number() != '0' && post_type_supports(get_post_type(), 'comments')) : ?>
-    <div class="alert alert-warning">
+    <div class="alert alert--warning">
       <?php _e('Comments are closed.', 'sage'); ?>
     </div>
   <?php endif; ?>
