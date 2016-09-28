@@ -74,7 +74,8 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
-    "bootstrap": "github:twbs/bootstrap#v4-dev",
+    "bourbon": "github:thoughtbot/bourbon#v5.0.0.beta.6",
+    "bourbon-neat": "^1.8.0",
     "font-awesome": "^4.6.3",
     "jquery": "1.12.4 - 3"
   }

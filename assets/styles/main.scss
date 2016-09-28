@@ -1,7 +1,9 @@
+@import "../../node_modules/bourbon/core/bourbon";
+@import "base/base";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
 @import "common/variables";
 
 // Import npm dependencies
-@import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/scss/font-awesome";
 
 @import "common/global";
